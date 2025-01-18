@@ -1,9 +1,9 @@
 'use strict';
-const gulp = require('gulp');
-const stringReplace = require('gulp-string-replace');
-const build = require('@microsoft/sp-build-web');
+import gulp from 'gulp'
+import stringReplace from 'gulp-string-replace'
+import build from '@microsoft/sp-build-web'
 
-build.initialize(require('gulp'));
+build.initialize(gulp);
 
 gulp.task('replace-import-meta', () => {
     return gulp.src(['./lib/**/*.js'])
