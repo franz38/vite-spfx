@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-for-spfx": "gulp build && gulp replace-import-meta"
+    "build-for-spfx": "rm -r lib && gulp build && gulp replace-import-meta"
   },
   "dependencies": {
     "react": "^18.3.1",
